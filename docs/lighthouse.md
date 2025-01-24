@@ -10,5 +10,5 @@
 
 最后整活出来的结果可能是这样的：
 
-<iframe src="./eval_list.html" height="300" style="border:1px solid gray;" title="整活效果">
+<iframe src="./eval_list.html" width="680" height="300" style="border:1px solid gray;" title="整活效果">
 </iframe>

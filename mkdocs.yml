@@ -80,9 +80,9 @@ extra_css:
 # [Navigation]
 nav:
   - Index: index.md
-  - Blog: 
-    - lighthouse.md
+  - 在灯塔系统整活: lighthouse.md
 
 # [Plugin]
 plugins:
-  - blog
+  - blog:
+      blog_dir: .
