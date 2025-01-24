@@ -51,6 +51,7 @@ theme:
     - navigation.indexes
     - toc.follow
     - content.tabs.link
+  language: zh
 
 extra:
   social:
@@ -86,3 +87,10 @@ nav:
 plugins:
   - blog:
       blog_dir: .
+      post_dir: "{blog}/"
+      post_date_format: medium
+      post_url_date_format: yyyy
+      post_url_format: "{categories}/{file}"
+      post_url_max_categories: 2
+  - search:
+      lang: zh
