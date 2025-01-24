@@ -72,19 +72,19 @@
 	<div class="tableFixed_iframe">
 		<div class="table-bodyFixed image_relation_parent" id="table_body">
 		<div class="table-headFixed">
-			<table class="table table-bordered table-striped">
+			<table class="table table-bordered table-striped" style="font-size:0.6em">
 				<thead id="head_thead">
 			        <tr>
 			          	<td class="w100" rowspan="2">学生姓名</td>
 								<td colspan="4">学习品质</td>
 						<td rowspan="2">互评<br>
 								批量
-								<input type="checkbox" name="ls" onclick="multipleCheck(this);" value=""><label>不选</label>
-									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1019"><label>A</label>
-									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1021"><label>B</label>
-									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1023"><label>C</label>
+								<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="" style="font-size:0.6em"><label>不选</label>
+									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1019" style="font-size:0.6em"><label>A</label>
+									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1021" style="font-size:0.6em"><label>B</label>
+									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1023" style="font-size:0.6em"><label>C</label>
 						</td>		
-						<td rowspan="2"><span>A最多<i id="count_a">10</i>人，已选<i id="check_a">10</i>人</span><span id="verd_a" style="display:none;color:red;">，超出<i id="verd_ren_a"></i>人</span><br>
+						<td rowspan="2" style="font-size:0.6em"><span>A最多<i id="count_a">10</i>人，已选<i id="check_a">10</i>人</span><span id="verd_a" style="display:none;color:red;">，超出<i id="verd_ren_a"></i>人</span><br>
 							<span>C最多<i id="count_c">2</i>人，已选<i id="check_c">0</i>人</span><span id="verd_c" style="display:none;color:red;">，超出<i id="verd_ren_c"></i>人</span>
 						</td>
 					</tr>
@@ -105,7 +105,7 @@
 		        </thead>
 			</table>
 		</div>
-			<form id="eachSave" action="https://student.lighthouse.ren/qa/eval/posteacheval" method="POST" autocomplete="off">
+			<form id="eachSave" action="https://student.lighthouse.ren/qa/eval/posteacheval" method="POST" autocomplete="off" style="font-size:0.6em">
 				<table class="table table-bordered table-striped">
 					<thead id="head_thead">
 				        <tr>

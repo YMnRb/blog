@@ -1,8 +1,8 @@
 # [Info]
-site_name: Blog
+site_name: 博客
 site_url: https://YMnRb.GitHub.io/blog
 site_author: YMnRb
-site_description: YMnRb's Blogs
+site_description: YMnRb 的博客
 
 theme:
   name: material
@@ -45,13 +45,20 @@ theme:
   font:
     text: Oppo Sans
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    # - navigation.path # exclusive Insiders features for sponsors only
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
     - navigation.indexes
+    # - navigation.path # exclusive Insiders features for sponsors only
     - toc.follow
     - content.tabs.link
   language: zh
+  # TODO
+  # favicon:
+  # icon:
+  #   logo: 
+
+copyright: Copyright &copy; YMnRb 2025 | All rights reserved
 
 extra:
   social:
@@ -82,14 +89,13 @@ extra_css:
 
 # [Navigation]
 nav:
-  - Index: index.md
-  - 在灯塔系统整活: lighthouse.md
+  - index.md
 
 # [Plugin]
 plugins:
   - blog:
       blog_dir: .
-      post_dir: "{blog}/"
+      post_dir: "{blog}/posts"
       post_date_format: medium
       post_url_date_format: yyyy
       post_url_format: "{categories}/{file}"
