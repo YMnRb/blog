@@ -1,0 +1,1 @@
+The 60 fonts whose names begin with '`KaTeX_`', are downloaded from <https://github.com/KaTeX/KaTeX>.

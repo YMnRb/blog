@@ -1,0 +1,115 @@
+@font-face {
+	font-family: "SourceHanSerif";
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/SourceHanSerifSC-Light.otf) format("opentype");
+}
+@font-face {
+	font-family: "SourceHanSerif";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/SourceHanSerifSC-Medium.otf) format("opentype");
+}
+@font-face {
+	font-family: "SourceHanSerif";
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/SourceHanSerifSC-Bold.otf) format("opentype");
+}
+/* @font-face {
+	font-family: "KaTeX_Main";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/KaTeX_Main-Regular.woff2) format("woff2"),
+	     url(../fonts/KaTeX_Main-Regular.woff) format("woff"),
+	     url(../fonts/KaTeX_Main-Regular.ttf) format("truetype");
+}
+@font-face {
+	font-family: "KaTeX_Main";
+	font-style: italic;
+	font-weight: 400;
+	src: url(../fonts/KaTeX_Main-Italic.woff2) format("woff2"),
+	     url(../fonts/KaTeX_Main-Italic.woff) format("woff"),
+	     url(../fonts/KaTeX_Main-Italic.ttf) format("truetype");
+}
+@font-face {
+	font-family: "KaTeX_Main"; 
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/KaTeX_Main-Bold.woff2) format("woff2"), 
+	     url(../fonts/KaTeX_Main-Bold.woff) format("woff"), 
+		 url(../fonts/KaTeX_Main-Bold.ttf) format("truetype");
+}
+@font-face {
+	font-family: "KaTeX_Main";
+	font-style: italic;
+	font-weight: 700;
+	src: url(../fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),
+	     url(../fonts/KaTeX_Main-BoldItalic.woff) format("woff"),
+	     url(../fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");
+} */
+@font-face {
+	font-family: 'Iosevka Custom';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('../fonts/IosevkaSansCustom-Regular.woff2') format('woff2'), 
+	     url('../fonts/IosevkaSansCustom-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Iosevka Custom';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('../fonts/IosevkaSansCustom-Oblique.woff2') format('woff2'), 
+	     url('../fonts/IosevkaSansCustom-Oblique.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Iosevka Custom';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('../fonts/IosevkaSansCustom-Italic.woff2') format('woff2'), 
+	     url('../fonts/IosevkaSansCustom-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Iosevka Custom Oblique';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	src: url('../fonts/IosevkaSansCustom-Oblique.woff2') format('woff2'), 
+	     url('../fonts/IosevkaSansCustom-Oblique.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Oppo Sans';
+	font-weight: 300;
+	font-stretch: normal;
+	src: url('../fonts/OPPOSans-L.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Oppo Sans';
+	font-weight: 400;
+	font-stretch: normal;
+	src: url('../fonts/OPPOSans-R.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Oppo Sans';
+	font-weight: 500;
+	font-stretch: normal;
+	src: url('../fonts/OPPOSans-M.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Oppo Sans';
+	font-weight: 700;
+	font-stretch: normal;
+	src: url('../fonts/OPPOSans-B.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Oppo Sans';
+	font-weight: 900;
+	font-stretch: normal;
+	src: url('../fonts/OPPOSans-H.ttf') format('truetype');
+}
