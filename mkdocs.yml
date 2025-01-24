@@ -69,6 +69,8 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+  - attr_list
+  - md_in_html
 
 extra_javascript:
   - .config/javascripts/katex.js # for KaTeX
