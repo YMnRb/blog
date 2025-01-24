@@ -80,6 +80,8 @@ extra_css:
 # [Navigation]
 nav:
   - Index: index.md
+  - Blog: 
+    - lighthouse.md
 
 # [Plugin]
 plugins:
