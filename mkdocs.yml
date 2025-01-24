@@ -77,6 +77,10 @@ extra_css:
   - .config/unpkg-katex@0.16.11/katex.min.custom.css # https://unpkg.com/katex@0/dist/katex.min.css # for KaTeX
   - .config/stylesheets/extra.css # for fonts
 
-# [Navigtion]
+# [Navigation]
 nav:
   - Index: index.md
+
+# [Plugin]
+plugins:
+  - blog

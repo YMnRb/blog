@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://student.lighthouse.ren/qa/eval/otherEval?id=1067399 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<title>模板编辑</title>
+ 	 <link rel="stylesheet" href="./main.css">
+ 	 <!--bootstrap框架-->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <!--新样式-->
+    <link rel="stylesheet" href="./newFrom.css">
+
+  <!--[if lt IE 9]>
+  <script src="/resources/script/html5shiv.min.js"></script>
+  <script src="/resources/script/respond.min.js"></script>
+  <![endif]-->
+<script src="./jquery-1.11.3.min.js.下载"></script>
+<script src="./main.js.下载"></script>
+<script src="./package.js.下载"></script>
+<script src="./layer.js.下载"></script><link rel="stylesheet" href="./layer.css" id="layuicss-layer">
+ <style>
+ 	.tableFixed_iframe{
+		width: 100%;
+	    height: 100%;
+	    box-sizing: border-box;
+	    padding: 15px;
+	    overflow-y: auto;
+	    overflow-x: hidden;
+	}
+	.tableFixed_iframe table{
+		table-layout: fixed;
+	}
+	.tableFixed_iframe table tr td{
+		vertical-align: middle;
+	}
+ 	.tableFixed_iframe .table-headFixed{
+ 		position: fixed;
+ 		top:0;
+ 		right:0;
+ 		left:0;
+ 		margin: 0 auto;
+ 		padding: 15px 15px 0 15px;
+ 		background-color: #fff;
+ 		width: 100%;
+ 		box-sizing: border-box;
+ 	}
+ 	.tableFixed_iframe .table-headFixed .table{
+ 		margin-bottom: 0;
+ 	}
+	.image_relation_parent{
+ 		position: relative;
+ 	}
+ 	.image_relation{
+ 		position: fixed;
+	    width: 238px;
+	    height: 180px;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index:99;
+	    margin: auto;
+ 	}
+ 
+ </style>
+ <script>
+ 
+ </script>
+</head>
+<body>
+	<div class="tableFixed_iframe">
+		<div class="table-bodyFixed image_relation_parent" id="table_body">
+		<div class="table-headFixed">
+			<table class="table table-bordered table-striped">
+				<thead id="head_thead">
+			        <tr>
+			          	<td class="w100" rowspan="2">学生姓名</td>
+								<td colspan="4">学习品质</td>
+						<td rowspan="2">互评<br>
+								批量
+								<input type="checkbox" name="ls" onclick="multipleCheck(this);" value=""><label>不选</label>
+									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1019"><label>A</label>
+									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1021"><label>B</label>
+									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1023"><label>C</label>
+						</td>		
+						<td rowspan="2"><span>A最多<i id="count_a">10</i>人，已选<i id="check_a">10</i>人</span><span id="verd_a" style="display:none;color:red;">，超出<i id="verd_ren_a"></i>人</span><br>
+							<span>C最多<i id="count_c">2</i>人，已选<i id="check_c">0</i>人</span><span id="verd_c" style="display:none;color:red;">，超出<i id="verd_ren_c"></i>人</span>
+						</td>
+					</tr>
+				    <tr>
+										<td>
+											体育活动出勤率
+										</td>
+										<td>
+											完成体育学习任务
+										</td>
+										<td>
+											参加体育集体活动
+										</td>
+										<td>
+											平时体育锻炼表现
+										</td>
+			        </tr>
+		        </thead>
+			</table>
+		</div>
+			<form id="eachSave" action="https://student.lighthouse.ren/qa/eval/posteacheval" method="POST" autocomplete="off">
+				<table class="table table-bordered table-striped">
+					<thead id="head_thead">
+				        <tr>
+				          	<td class="w100" rowspan="2">学生姓名</td>
+									<td colspan="4">学习品质</td>
+							<td rowspan="2">互评<br>
+									批量
+									<input type="checkbox" name="ls" onclick="multipleCheck(this);" value=""><label>不选</label>
+										<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1019"><label>A</label>
+										<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1021"><label>B</label>
+										<input type="checkbox" name="ls" onclick="multipleCheck(this);" value="1023"><label>C</label>
+							</td>		
+							<td rowspan="2"><span>A最多<i id="count_a"></i>人，已选<i id="check_a">0</i>人</span><span id="verd_a" style="display:none;color:red;">，超出<i id="verd_ren_a"></i>人</span><br>
+								<span>C最多<i id="count_c"></i>人，已选<i id="check_c">0</i>人</span><span id="verd_c" style="display:none;color:red;">，超出<i id="verd_ren_c"></i>人</span>
+							</td>
+						</tr>
+					    <tr>
+											<td>
+												体育活动出勤率
+											</td>
+											<td>
+												完成体育学习任务
+											</td>
+											<td>
+												参加体育集体活动
+											</td>
+											<td>
+												平时体育锻炼表现
+											</td>
+				        </tr>
+			        </thead>
+			        <tbody id="user_table_tbody">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].id" value="29642111">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].classId" value="127627">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].tplId" value="1361">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].evalId" value="975">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].courseId" value="63">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].year" value="2024">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].period" value="1">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].orgId" value="319">
+						<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].studentId" value="725001">
+	        			<tr>
+							<td class="w100">学号.姓名</td>
+	
+						    		<td colspan="4">
+						    			<div class="left min-h60" style="width:100%;"><table><tbody><tr><th class="w300"><marquee><a style="color:#0099cc;font-weight:700;font-size:16px">100%</a>出勤，<b style="color:#0099cc;font-size:16px" ;font-size:16px="">从无</b>旷课　　</marquee></th><th class="w300"><marquee><strong style="color:#ff0000">尽</strong><strong style="color:#ff6600">力</strong><strong style="color:#ffcc00">按</strong><strong style="color:#99cc00">要</strong><strong style="color:#33cc00">求</strong><strong style="color:#00aa00">完</strong><strong style="color:#009999">成</strong><strong style="color:#0066cc;font-weight:700;font-size:16px">全</strong><strong style="color:#3333ff;font-weight:700;font-size:16px">部</strong><strong style="color:#6600ff">体</strong><strong style="color:#9900ff">育</strong><strong style="color:#ff0099">任</strong><strong style="color:#ff66cc">务</strong></marquee></th><th class="w300"><marquee><a style="color:#0099cc;font-weight:700;font-size:16px">积极</a><strong style="color:#ff0000">参</strong><strong style="color:#ff9900">与</strong><strong style="color:#cccc00">集</strong><strong style="color:#009900">体</strong><strong style="color:#0066cc">活</strong><strong style="color:#6600ff">动</strong>　　　　　</marquee></th><th class="w300"><marquee><a style="color:#0099cc;font-weight:700;font-size:16px;font:serif" title="只是能力有限">尽我所能</a><strong style="color:#ff0000">完</strong><strong style="color:#ff9900">成</strong><strong style="color:#cccc00">平</strong><strong style="color:#009900">时</strong><strong style="color:#0066cc">体</strong><strong style="color:#6600ff">育</strong><strong style="color:#cc00ff">锻</strong><strong style="color:#ff0066">炼</strong></marquee></th></tr></tbody></table>
+
+</div>
+									</td>
+									<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].listScoreData[0].tplId" value="1361">
+									<input type="hidden" name="qaEvalScoreDetail.listScoreDetail[36].listScoreData[0].tplContentId" value="4449">
+							<td colspan="2">
+									 <input type="checkbox" class="levelId" checked="" name="qaEvalScoreDetail.listScoreDetail[36].levelId" onclick="levelCheck(this)" value="1019"><label style="margin-right: 30px;">A</label>
+									 <input type="checkbox" class="levelId" name="qaEvalScoreDetail.listScoreDetail[36].levelId" onclick="levelCheck(this)" value="1021"><label style="margin-right: 30px;">B</label>
+									 <input type="checkbox" class="levelId" name="qaEvalScoreDetail.listScoreDetail[36].levelId" onclick="levelCheck(this)" value="1023"><label style="margin-right: 30px;">C</label>
+							</td>
+					  	</tr>
+	       	 		</tbody>
+				</table>
+			</form>
+		</div>
+	</div>
+</body></html>
